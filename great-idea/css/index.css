@@ -64,3 +64,136 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.main {
+	width: 900px;
+	margin: 0 auto;
+}
+
+/*---------- header ----------*/
+header {
+	background-image: linear-gradient(to right, black, white);;
+	border-radius: 20px;
+	display: flex;
+	justify-content:space-between;
+}
+
+header .nav {
+	display: flex;
+	width: 700px;
+	justify-content:space-between;
+	align-items: center;
+	margin-left: 2%
+	
+	
+}
+
+header .nav a {
+	font-family: "Pacifico";
+	color: white;
+}
+
+
+header .logo {
+    margin-left: 91px;
+}
+
+/*---------- top section ----------*/
+.section-top {
+	margin-top: 5%;
+	display:flex;
+	justify-content: space-between;
+}
+
+.section-top .text {
+	text-align: center;
+	font-size: 80px;
+	width: 45%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 2% 0 0 6%;
+}
+
+.section-top button {
+	background: white;
+	width: 45%;
+	font: inherit;
+	font-size: 15px;
+	padding: 2%;
+	border: 1px solid black;
+}
+
+.section-top button:hover {
+	background: black;
+  	color: white;
+ 	animation-duration: 1s;
+ 	animation-name: colorChange;
+}
+
+@keyframes colorChange {
+	0% {
+	  background-color: white;
+	}
+	50% {
+	  background-color: light black;
+	}
+	100% {
+	  background-color: black;
+	}
+  }
+
+/*---------- middle section ----------*/
+.section-middle {
+	margin-top: 2%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.section-middle .feature {
+	width: 48%;
+}
+
+.section-middle .about {
+	width: 48%;
+}
+
+hr{
+	background-color: black; 
+	height: 1px; 
+	border: 0;
+}
+
+.middle-img{
+	margin-top: 2%;
+	width: 100%;
+}
+
+/*---------- buttom section ----------*/
+.section-bottom{
+	margin-top: 2%;
+	display:flex;
+	justify-content: space-between;
+}
+
+.section-bottom .services{
+	width: 30%;
+}
+
+.section-bottom .product{
+	width: 30%;
+}
+
+.section-bottom .vision{
+	width: 30%;
+}
+
+/*---------- footer ----------*/
+footer{
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	background-color: black;
+	color: white;
+	padding: 4px;
+	border-radius: 20px;
+}
