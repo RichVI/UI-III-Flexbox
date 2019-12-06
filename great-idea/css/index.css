@@ -71,10 +71,13 @@ h1, h2, h3, h4, h5 {
 
 /*---------- index header ----------*/
 header {
+	width: 900px;
 	background-image: linear-gradient(to right, black, white);;
 	border-radius: 20px;
 	display: flex;
 	justify-content:space-between;
+	position: fixed;
+	top: 0;
 }
 
 header .nav {
@@ -260,4 +263,24 @@ footer{
 
 .services-section-buttom ul li{
 	margin-bottom: 5%;
+}
+
+
+/*---------- service end section ----------*/
+.product-main-section{
+	display:flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.product-main-section div{
+	margin-bottom: 3%;
+}
+
+.product-main-section .text{
+	width: 50%;
+   background-color:#f0f0f0;
+	border: 2px solid black;
+	font-size: 18px;
+	padding:2%;
 }
