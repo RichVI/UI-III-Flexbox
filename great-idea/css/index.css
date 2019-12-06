@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5 {
 	margin: 0 auto;
 }
 
-/*---------- header ----------*/
+/*---------- index header ----------*/
 header {
 	background-image: linear-gradient(to right, black, white);;
 	border-radius: 20px;
@@ -97,7 +97,7 @@ header .logo {
     margin-left: 91px;
 }
 
-/*---------- top section ----------*/
+/*---------- index top section ----------*/
 .section-top {
 	margin-top: 5%;
 	display:flex;
@@ -142,7 +142,7 @@ header .logo {
 	}
   }
 
-/*---------- middle section ----------*/
+/*---------- index middle section ----------*/
 .section-middle {
 	margin-top: 2%;
 	display: flex;
@@ -168,7 +168,7 @@ hr{
 	width: 100%;
 }
 
-/*---------- buttom section ----------*/
+/*---------- index buttom section ----------*/
 .section-bottom{
 	margin-top: 2%;
 	display:flex;
@@ -196,4 +196,68 @@ footer{
 	color: white;
 	padding: 4px;
 	border-radius: 20px;
+}
+
+
+/*---------- service middle section ----------*/
+.services-section-middle{
+	display:flex;
+	flex-wrap:wrap;
+    justify-content: space-between;
+	
+}
+
+.services-section-middle div{
+   border: 1px solid black;
+   width: 48%;
+   padding: 2%;
+   background-color:#f0f0f0;
+   margin-bottom: 4%;
+}
+
+.services-section-middle button {
+	background: white;
+	width: 35%;
+	font: inherit;
+	font-size: 15px;
+	padding: 2%;
+	border: 1px solid black;
+}
+
+.services-section-middle button:hover {
+	background: black;
+  	color: white;
+ 	animation-duration: 1s;
+ 	animation-name: colorChange;
+}
+
+@keyframes colorChange {
+	0% {
+	  background-color: white;
+	}
+	50% {
+	  background-color: light black;
+	}
+	100% {
+	  background-color: black;
+	}
+  }
+
+
+/*---------- service end section ----------*/
+.services-section-buttom{
+	display: flex;
+}
+
+.services-section-buttom div{
+	width: 80%;
+	margin-right: 5%;
+}
+
+.services-section-buttom ul{
+	margin-left: 5%;
+}
+
+.services-section-buttom ul li{
+	margin-bottom: 5%;
 }
