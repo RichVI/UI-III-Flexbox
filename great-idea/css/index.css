@@ -64,3 +64,339 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.main {
+	width: 900px;
+	margin: 0 auto;
+}
+
+body{
+	background-color: white;
+}
+
+
+/*---------- index header ----------*/
+header {
+	width: 900px;
+	background-image: linear-gradient(to right, black, white);;
+	border-radius: 20px;
+	display: flex;
+	justify-content:space-between;
+	position: fixed;
+	top: 0;
+}
+
+header .nav {
+	display: flex;
+	width: 700px;
+	justify-content:space-between;
+	align-items: center;
+	margin-left: 2%
+	
+	
+}
+
+header .nav a {
+	font-family: "Pacifico";
+	color: white;
+}
+
+
+header .logo {
+    margin-left: 91px;
+}
+
+/*---------- index top section ----------*/
+.section-top {
+	margin-top: 5%;
+	display:flex;
+	justify-content: space-between;
+}
+
+.section-top .text {
+	text-align: center;
+	font-size: 80px;
+	width: 45%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 2% 0 0 6%;
+}
+
+.section-top button {
+	background: white;
+	width: 45%;
+	font: inherit;
+	font-size: 15px;
+	padding: 2%;
+	border: 1px solid black;
+}
+
+.section-top button:hover {
+	background: black;
+  	color: white;
+ 	animation-duration: 1s;
+ 	animation-name: colorChange;
+}
+
+@keyframes colorChange {
+	0% {
+	  background-color: white;
+	}
+	50% {
+	  background-color: light black;
+	}
+	100% {
+	  background-color: black;
+	}
+  }
+
+/*---------- index middle section ----------*/
+.section-middle {
+	margin-top: 2%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.section-middle .feature {
+	width: 48%;
+}
+
+.section-middle .about {
+	width: 48%;
+}
+
+hr{
+	background-color: black; 
+	height: 1px; 
+	border: 0;
+}
+
+.middle-img{
+	margin-top: 2%;
+	width: 100%;
+}
+
+/*---------- index buttom section ----------*/
+.section-bottom{
+	margin-top: 2%;
+	display:flex;
+	justify-content: space-between;
+}
+
+.section-bottom .services{
+	width: 30%;
+}
+
+.section-bottom .product{
+	width: 30%;
+}
+
+.section-bottom .vision{
+	width: 30%;
+}
+
+/*---------- footer ----------*/
+footer{
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	background-color: black;
+	color: white;
+	padding: 4px;
+	border-radius: 20px;
+}
+
+
+/*---------- service middle section ----------*/
+.services-section-middle{
+	display:flex;
+	flex-wrap:wrap;
+    justify-content: space-between;
+	
+}
+
+.services-section-middle div{
+   border: 1px solid black;
+   width: 48%;
+   padding: 2%;
+   background-color:#f0f0f0;
+   margin-bottom: 4%;
+}
+
+.services-section-middle button {
+	background: white;
+	width: 35%;
+	font: inherit;
+	font-size: 15px;
+	padding: 2%;
+	border: 1px solid black;
+}
+
+.services-section-middle button:hover {
+	background: black;
+  	color: white;
+ 	animation-duration: 1s;
+ 	animation-name: colorChange;
+}
+
+@keyframes colorChange {
+	0% {
+	  background-color: white;
+	}
+	50% {
+	  background-color: light black;
+	}
+	100% {
+	  background-color: black;
+	}
+  }
+
+
+/*---------- service end section ----------*/
+.services-section-buttom{
+	display: flex;
+}
+
+.services-section-buttom div{
+	width: 80%;
+	margin-right: 5%;
+}
+
+.services-section-buttom ul{
+	margin-left: 5%;
+}
+
+.services-section-buttom ul li{
+	margin-bottom: 5%;
+}
+
+
+/*---------- Product section ----------*/
+.product-main-section{
+	display:flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.product-main-section div{
+	margin-bottom: 3%;
+}
+
+.product-main-section .text{
+	width: 50%;
+   background-color:#f0f0f0;
+	border: 2px solid black;
+	font-size: 18px;
+	padding:2%;
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+	.main{
+		width: 500px;
+	}
+
+	header {
+		width: 500px;
+	    background-color: black;
+		display: flex;
+		position: fixed;
+		top: 0;
+	}
+	
+	header .nav {
+		display: flex;
+		justify-content:space-between;
+		margin-left: 2%
+		
+		
+	}
+	
+	header .nav a {
+		display: flex;
+		font-family: "Pacifico";
+		color: white;
+		font-size: 90%;
+	}
+	
+	
+	header .logo {
+		margin-left: 10%;
+	}
+
+	.services-header-img{
+		width: 100%;
+	}
+
+
+	.services-section-middle{
+		display:flex;
+		justify-content: space-between;
+		
+	}
+	
+	.services-section-middle div{
+	   border: 1px solid black;
+	   width: 100%;
+	   padding: 2%;
+	   background-color:#f0f0f0;
+	   margin-bottom: 4%;
+	}
+	
+	.services-section-middle button {
+		background: white;
+		width: 100%;
+		font: inherit;
+		font-size: 15px;
+		padding: 2%;
+		border: 1px solid black;
+	}
+	
+	.services-section-middle button:hover {
+		background: black;
+		  color: white;
+		 animation-duration: 1s;
+		 animation-name: colorChange;
+	}
+	
+	@keyframes colorChange {
+		0% {
+		  background-color: white;
+		}
+		50% {
+		  background-color: light black;
+		}
+		100% {
+		  background-color: black;
+		}
+	  }
+	
+	
+	/*---------- service end section ----------*/
+	.services-section-buttom{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.services-section-buttom div{
+		width: 100%;
+		margin-right: 5%;
+	}
+	
+	.services-section-buttom ul{
+		margin-left: 5%;
+	}
+	
+	.services-section-buttom ul li{
+		margin-bottom: 5%;
+	}
+
+	.services-info-img{
+		display:;
+	}
+
+}
